@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Portfolio Website</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">
+			<span id="typing"></span>
+		  </a>
+		<div class="menuToggle"></div>
+		<ul class="nav">
+			<li class="active"><a href="#home">Home</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#portfolio">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<section id="home">
+		<div class="content">
+			<h2>Vatsal Jain</h2>
+			<p>Hi, I’m Vatsal Jain, a tech enthusiast and coder from IIT Delhi. I enjoy solving challenging problems, building innovative projects, and exploring the intersection of technology and creativity. <br>
+
+				From competitive programming (Candidate Master on Codeforces and 5 star on CodeChef) to developing real-world applications, I’m always looking for opportunities to learn and grow. Let’s connect and create something impactful!</p>
+		</div>
+		<img src="images/vtj1.png" class="men">
+	</section>
+	<section id="services">
+		<div class="secText">
+			<h2>What I Am Great At</h2>
+			<p>I specialize in solving complex problems through competitive programming, building dynamic web applications, and designing intelligent AI solutions. With experience in game development and a knack for learning, I’m always ready to take on new challenges and deliver impactful results.</p>
+		</div>
+		<div class="content">
+			<div class="servicesBx">
+				<img src="images/CP2.png" alt="">
+				<h3>Competetive Programming</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="images/icon2.png" alt="">
+				<h3>Web Development</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="images/ML.png" alt="">
+				<h3>Machine Learning</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="images/game1.png" alt="">
+				<h3>Game Development</h3>
+			</div>
+		</div>
+		<!-- <div class="center">
+			<a href="#" class="btn">Hire Me</a>
+		</div> -->
+	</section>
+	<section id="portfolio">
+		<div class="secText">
+			<h2>My Recent Projects</h2>
+			<p>I’ve had the opportunity to work on diverse projects, ranging from AI-driven solutions to innovative web applications. Each project reflects my passion for solving real-world problems through technology.</p>
+		</div>
+		<div class="content">
+			<div class="imgBx">
+				<img src="images/stock.avif" alt="">
+				<div class="hoverContent">
+					<h3>Stock Market Simulation and Tracking Application</h3>
+					<p>Developed a Stock Market Portfolio Management Platform using Flask, featuring real-time stock data, portfolio tracking, and interactive visualizations. Integrated Jugaad Data NSE API for live market updates and built tools for simulating buy/sell operations.</p>
+					<a href="https://github.com/vatsaljain79/Stock_Market_Stimulator" target="_blank">
+						GitHub Repo
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="imgBx">
+				<img src="images/car.jpg" alt="">
+				<div class="hoverContent">
+					<h3>
+						Used Car Prediction Model</h3>
+					<p>Built a machine learning pipeline to predict used car prices using a dataset of 50,000 listings. Implemented advanced preprocessing, feature engineering, and models like Random Forest, XGBoost, and neural networks. Achieved an R² of 0.68 using ensemble and stacking methods.</p>
+					<a href="https://github.com/vatsaljain79/Used_Car_Price_Prediction" target="_blank">
+						GitHub Repo
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="imgBx">
+				<img src="images/havannah.avif" alt="">
+				<div class="hoverContent">
+					<h3>
+						Havannah Game Playing AI</h3>
+					<p>Developed an AI agent for the strategic board game Havannah, featuring intelligent decision-making using Monte Carlo Tree Search (MCTS). Supports multiple game modes (Human vs AI, AI vs Random Agent, Human vs Human), configurable board sizes (4x4 to 10x10), and time-bound moves. The project includes a GUI and command-line interface, offering an engaging and adaptable gameplay experience.</p>
+					<a href="https://github.com/vatsaljain79/AI_Havannah_Game" target="_blank">
+						GitHub Repo
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="imgBx">
+				<img src="images/search.webp" alt="">
+				<div class="hoverContent">
+					<h3>
+						
+Document Processing Tool and Search Engine</h3>
+					<p>Created a search engine that will return all matching answers to an input query in
+						the corpus provided, similar to they way search engines return the results. Then implement a search mechanism to search for a string in the document. Given any pattern p, returned a list of all the offsets in the document at which the pattern is present in the text.</p>
+					<a href="https://github.com/vatsaljain79/COL106-A6-Document-Processing-Tool" target="_blank">
+						GitHub Repo
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="imgBx">
+				<img src="images/unlim.jpg" alt="">
+				<div class="hoverContent">
+					<h3>
+						
+Unlimited Int and Rationals + Expression Evaluator using Trees</h3>
+					<p>Can make operations (+ - / * %) for numbers having any number of digits for int and rationals. Made an expression Evaluator using basic knowledge of Tree Data Structure by storing the values of
+						previous variables in another tree and evaluate the value of other variable by performing the operations.</p>
+					<a href="https://github.com/vatsaljain79/COL106-A4-Implementation-of-Unlimited-Int-Rationals-and-Expression-Evaluator-for-Rational-Using-Tree" target="_blank">
+						GitHub Repo
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="imgBx">
+				<img src="images/clash.jpg" alt="">
+				<div class="hoverContent">
+					<h3>
+						Clash Invaders</h3>
+					<p>Made a “Clash Invader” Game using Python built in library “Pygame” and its related concepts. It involves
+						finishing of aliens before they touch us. As your score increases the toughness of the game increases !! Pygame Library: Its efficient functionalities enabled smooth gameplay and captivating visual effects, Sound effects, different interface for game enhance the overall gaming experience of the player.</p>
+					<a href="https://github.com/vatsaljain79/Clash_Invader_python" target="_blank">
+						GitHub Repo
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			<a href="https://github.com/vatsaljain79" class="btn">View More</a>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="secText">
+			<h2>Ways To Contact Me</h2>
+			<p>Feel free to get in touch with me through any of the following channels. Whether you have a project, collaboration idea, or just want to say hello, I’d love to hear from you!</p>
+		</div>
+		<div class="content">
+			<a href="#">
+				<ion-icon name="mail-outline"></ion-icon> jvatsal0709@gmail.com
+			</a>
+			<a href="#">
+				<ion-icon name="call-outline"></ion-icon> +91 7742185800
+			</a>
+		
+			<a href="https://www.linkedin.com/in/vatsaljain79/" target="_blank">
+				<ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+			</a>
+		
+			<a href="https://github.com/vatsaljain79" target="_blank">
+				<ion-icon name="logo-github"></ion-icon> GitHub
+			  </a>
+		</div>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		const list = document.querySelectorAll('.nav li');
+		function active(){
+			list.forEach((i) =>
+			i.classList.remove('active'));
+			this.classList.add('active');
+		}
+		list.forEach((i) =>
+		i.addEventListener('click', active));
+
+		let menuToggle = document.querySelector('.menuToggle');
+		let header = document.querySelector('header');
+		menuToggle.onclick = function(){
+			header.classList.toggle('active')
+		}
+
+		const text = "Vatsal Jain"; // The text to type and delete
+    const typingElement = document.getElementById("typing");
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const delay = isDeleting ? 100 : 150;
+
+      if (!isDeleting && index < text.length) {
+        typingElement.textContent += text[index];
+        index++;
+      } else if (isDeleting && index > 0) {
+        typingElement.textContent = text.substring(0, index - 1);
+        index--;
+      }
+
+      if (index === text.length) {
+        setTimeout(() => (isDeleting = true), 1000);
+      } else if (index === 0) {
+        isDeleting = false;
+      }
+
+      setTimeout(typeEffect, delay);
+    }
+
+    // Start the typing effect
+    typeEffect();
+
+
+
+	</script>
+	
+</body>
+</html>
