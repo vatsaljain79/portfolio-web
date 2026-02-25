@@ -429,24 +429,16 @@ section {
   flex-direction: column;
   justify-content: flex-end;
   padding: 30px;
-  opacity: 0;
-  transition: var(--transition);
-}
-
-.imgBx:hover .hoverContent {
   opacity: 1;
+  transition: var(--transition);
 }
 
 .hoverContent h3 {
   font-size: 1.5rem;
   color: var(--accent);
   margin-bottom: 10px;
-  transform: translateY(20px);
-  transition: var(--transition);
-}
-
-.imgBx:hover .hoverContent h3 {
   transform: translateY(0);
+  transition: var(--transition);
 }
 
 .hoverContent p {
@@ -454,13 +446,8 @@ section {
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 20px;
-  transform: translateY(20px);
-  transition: var(--transition);
-  transition-delay: 0.05s;
-}
-
-.imgBx:hover .hoverContent p {
   transform: translateY(0);
+  transition: var(--transition);
 }
 
 .hoverContent a {
@@ -474,15 +461,14 @@ section {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-  transform: translateY(20px);
+  transform: translateY(0);
   transition: var(--transition);
-  transition-delay: 0.1s;
   align-self: flex-start;
 }
 
 .hoverContent a:hover {
   background: var(--accent-hover);
-  transform: translateY(0) scale(1.05);
+  transform: scale(1.05);
 }
 
 .hoverContent a svg {
