@@ -1,242 +1,660 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Portfolio Website</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Creative Portfolio - Vatsal Jain</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+	<!-- Custom Cursor -->
+	<div class="cursor-dot" id="cursor-dot"></div>
+	<div class="cursor-outline" id="cursor-outline"></div>
+
 	<header>
 		<a href="#" class="logo">
-			<span id="typing"></span>
-		  </a>
-		<div class="menuToggle"></div>
+			<span id="typing"></span><span class="cursor">|</span>
+		</a>
+		<div class="menuToggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 		<ul class="nav">
 			<li class="active"><a href="#home">Home</a></li>
 			<li><a href="#services">Services</a></li>
 			<li><a href="#portfolio">Projects</a></li>
+			<li><a href="#blogs">Blogs</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
-	<section id="home">
-		<div class="content">
-			<h2>Vatsal Jain</h2>
-			<p>Hi, I’m Vatsal Jain, a tech enthusiast and coder from IIT Delhi. I enjoy solving challenging problems, building innovative projects, and exploring the intersection of technology and creativity. <br>
 
-				From competitive programming (Candidate Master on Codeforces and 5 star on CodeChef) to developing real-world applications, I’m always looking for opportunities to learn and grow. Let’s connect and create something impactful!</p>
+	<section id="home">
+		<div class="glow-bg"></div>
+		<div class="content">
+			<h2>Hi, I'm <br><span class="highlight">Vatsal Jain</span></h2>
+			<p>A tech enthusiast and coder from IIT Delhi. I enjoy solving challenging problems, building innovative
+				projects, and exploring the intersection of technology and creativity.</p>
+			<p>From competitive programming (Candidate Master on Codeforces and 5 star on CodeChef) to developing
+				real-world applications, I’m always looking for opportunities to learn and grow. Let’s connect and
+				create something impactful!</p>
+			<a href="#portfolio" class="btn">View My Work <ion-icon name="arrow-down-outline"></ion-icon></a>
 		</div>
-		<img src="images/vtj1.png" class="men">
+		<div class="img-box">
+			<img src="images/vtj1.png" class="men" alt="Vatsal Jain">
+		</div>
 	</section>
-	<section id="services">
+
+	<section id="services" class="reveal">
 		<div class="secText">
 			<h2>What I Am Great At</h2>
-			<p>I specialize in solving complex problems through competitive programming, building dynamic web applications, and designing intelligent AI solutions. With experience in game development and a knack for learning, I’m always ready to take on new challenges and deliver impactful results.</p>
+			<p>I specialize in solving complex problems through competitive programming, building dynamic web
+				applications, and designing intelligent AI solutions. I'm always ready to take on new challenges and
+				deliver impactful results.</p>
 		</div>
 		<div class="content">
 			<div class="servicesBx">
-				<img src="images/CP2.png" alt="">
-				<h3>Competetive Programming</h3>
+				<img src="images/CP2.png" alt="Competitive Programming">
+				<h3>Competitive Programming</h3>
+				<p>Solving complex algorithmic challenges and optimizing code execution.</p>
 			</div>
 			<div class="servicesBx">
-				<img src="images/icon2.png" alt="">
+				<img src="images/icon2.png" alt="Web Development">
 				<h3>Web Development</h3>
+				<p>Crafting responsive, dynamic, and visually stunning web applications.</p>
 			</div>
 			<div class="servicesBx">
-				<img src="images/ML.png" alt="">
+				<img src="images/ML.png" alt="Machine Learning">
 				<h3>Machine Learning</h3>
+				<p>Building predictive models and data-driven intelligent systems.</p>
 			</div>
 			<div class="servicesBx">
-				<img src="images/game1.png" alt="">
+				<img src="images/game1.png" alt="Game Development">
 				<h3>Game Development</h3>
+				<p>Creating interactive experiences and AI-driven game logic.</p>
 			</div>
 		</div>
 	</section>
-	<section id="portfolio">
+
+	<section id="portfolio" class="reveal">
 		<div class="secText">
 			<h2>My Recent Projects</h2>
-			<p>I’ve had the opportunity to work on diverse projects, ranging from AI-driven solutions to innovative web applications. Each project reflects my passion for solving real-world problems through technology.</p>
+			<p>Diverse projects ranging from AI-driven solutions to innovative web applications. Each project reflects
+				my passion for solving real-world problems through technology.</p>
 		</div>
 		<div class="content">
-
 			<div class="imgBx">
-				<img src="images/tetris.webp" alt="">
+				<img src="images/tetris.webp" alt="Tetris Game">
 				<div class="hoverContent">
-					<h3>Tetris Game using Computer Vision</h3>
-					<p>Developed an interactive, hand-gesture-controlled Tetris-inspired game using OpenCV and Mediapipe. Integrated real-time block movement detection, dynamic difficulty levels, and a scoring system to enhance engagement. Ensured seamless game flow with features like restart and high-score tracking.</p>
+					<h3>Computer Vision Tetris</h3>
+					<p>An interactive, hand-gesture-controlled Tetris-inspired game using OpenCV and Mediapipe.</p>
 					<a href="https://github.com/vatsaljain79/portfolio-web" target="_blank">
-						GitHub Repo
+						View on GitHub
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+							<path
+								d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z" />
 						</svg>
 					</a>
 				</div>
 			</div>
 
 			<div class="imgBx">
-				<img src="images/stock.avif" alt="">
+				<img src="images/stock.avif" alt="Stock Market App">
 				<div class="hoverContent">
-					<h3>Stock Market Simulation and Tracking Application</h3>
-					<p>Developed a Stock Market Portfolio Management Platform using Flask, featuring real-time stock data, portfolio tracking, and interactive visualizations. Integrated Jugaad Data NSE API for live market updates and built tools for simulating buy/sell operations.</p>
+					<h3>Stock Market Sim</h3>
+					<p>A portfolio management platform built with Flask, featuring live NSE data and interactive
+						visualizations.</p>
 					<a href="https://github.com/vatsaljain79/Stock_Market_Stimulator" target="_blank">
-						GitHub Repo
+						View on GitHub
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+							<path
+								d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z" />
 						</svg>
 					</a>
 				</div>
 			</div>
 
 			<div class="imgBx">
-				<img src="images/car.jpg" alt="">
+				<img src="images/car.jpg" alt="Car Price Prediction">
 				<div class="hoverContent">
-					<h3>
-						Used Car Prediction Model</h3>
-					<p>Built a machine learning pipeline to predict used car prices using a dataset of 50,000 listings. Implemented advanced preprocessing, feature engineering, and models like Random Forest, XGBoost, and neural networks. Achieved an R² of 0.68 using ensemble and stacking methods.</p>
+					<h3>Used Car Predictor</h3>
+					<p>End-to-end ML pipeline predicting used car prices using Random Forest, XGBoost, and neural
+						networks.</p>
 					<a href="https://github.com/vatsaljain79/Used_Car_Price_Prediction" target="_blank">
-						GitHub Repo
+						View on GitHub
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+							<path
+								d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z" />
 						</svg>
 					</a>
 				</div>
 			</div>
+
 			<div class="imgBx">
-				<img src="images/havannah.avif" alt="">
+				<img src="images/havannah.avif" alt="Havannah AI">
 				<div class="hoverContent">
-					<h3>
-						Havannah Game Playing AI</h3>
-					<p>Developed an AI agent for the strategic board game Havannah, featuring intelligent decision-making using Monte Carlo Tree Search (MCTS). Supports multiple game modes (Human vs AI, AI vs Random Agent, Human vs Human), configurable board sizes (4x4 to 10x10), and time-bound moves. The project includes a GUI and command-line interface, offering an engaging and adaptable gameplay experience.</p>
+					<h3>Havannah AI Agent</h3>
+					<p>AI agent using Monte Carlo Tree Search (MCTS) to play the strategic board game Havannah.</p>
 					<a href="https://github.com/vatsaljain79/AI_Havannah_Game" target="_blank">
-						GitHub Repo
+						View on GitHub
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+							<path
+								d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z" />
 						</svg>
 					</a>
 				</div>
 			</div>
+
 			<div class="imgBx">
-				<img src="images/search.webp" alt="">
+				<img src="images/search.webp" alt="Search Engine">
 				<div class="hoverContent">
-					<h3>
-						
-Document Processing Tool and Search Engine</h3>
-					<p>Created a search engine that will return all matching answers to an input query in
-						the corpus provided, similar to they way search engines return the results. Then implement a search mechanism to search for a string in the document. Given any pattern p, returned a list of all the offsets in the document at which the pattern is present in the text.</p>
+					<h3>Doc Search Engine</h3>
+					<p>Custom search mechanism that processes corpora and efficiently matches patterns and terms.</p>
 					<a href="https://github.com/vatsaljain79/COL106-A6-Document-Processing-Tool" target="_blank">
-						GitHub Repo
+						View on GitHub
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+							<path
+								d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z" />
 						</svg>
 					</a>
 				</div>
 			</div>
+
 			<div class="imgBx">
-				<img src="images/unlim.jpg" alt="">
+				<img src="images/unlim.jpg" alt="Unlimited Int Math">
 				<div class="hoverContent">
-					<h3>
-						
-Unlimited Int and Rationals + Expression Evaluator using Trees</h3>
-					<p>Can make operations (+ - / * %) for numbers having any number of digits for int and rationals. Made an expression Evaluator using basic knowledge of Tree Data Structure by storing the values of
-						previous variables in another tree and evaluate the value of other variable by performing the operations.</p>
-					<a href="https://github.com/vatsaljain79/COL106-A4-Implementation-of-Unlimited-Int-Rationals-and-Expression-Evaluator-for-Rational-Using-Tree" target="_blank">
-						GitHub Repo
+					<h3>Unlimited Int Evaluator</h3>
+					<p>Data structures implementation for arbitrary precision arithmetic and tree-based expression
+						evaluation.</p>
+					<a href="https://github.com/vatsaljain79/COL106-A4-Implementation-of-Unlimited-Int-Rationals-and-Expression-Evaluator-for-Rational-Using-Tree"
+						target="_blank">
+						View on GitHub
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+							<path
+								d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z" />
 						</svg>
 					</a>
 				</div>
 			</div>
+
 			<div class="imgBx">
-				<img src="images/clash.jpg" alt="">
+				<img src="images/clash.jpg" alt="Clash Invaders">
 				<div class="hoverContent">
-					<h3>
-						Clash Invaders</h3>
-					<p>Made a “Clash Invader” Game using Python built in library “Pygame” and its related concepts. It involves
-						finishing of aliens before they touch us. As your score increases the toughness of the game increases !! Pygame Library: Its efficient functionalities enabled smooth gameplay and captivating visual effects, Sound effects, different interface for game enhance the overall gaming experience of the player.</p>
+					<h3>Clash Invaders Game</h3>
+					<p>A classic arcade-style shooter game built with Pygame featuring increasing difficulty and
+						polished visuals.</p>
 					<a href="https://github.com/vatsaljain79/Clash_Invader_python" target="_blank">
-						GitHub Repo
+						View on GitHub
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z"/>
+							<path
+								d="M14 3v2h3.59L8 14.59 9.41 16 19 6.41V10h2V3h-7zM19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7z" />
 						</svg>
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="center">
-			<a href="https://github.com/vatsaljain79" class="btn">View More</a>
+			<a href="https://github.com/vatsaljain79" class="btn btn-outline" target="_blank">View More on GitHub</a>
 		</div>
 	</section>
-	<section id="contact">
+
+	<section id="blogs" class="reveal">
+		<div class="secText">
+			<h2>Latest Articles</h2>
+			<p>Explore my thoughts.</p>
+		</div>
+		<div class="blog-container">
+			<div class="blog-card">
+				<div class="blog-img">
+					<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+						alt="Blog 1">
+				</div>
+				<div class="blog-info">
+					<span class="blog-date">Feb 12, 2025</span>
+					<h3>Mastering Competitive Programming</h3>
+					<p>A comprehensive guide to transitioning from a beginner to a Candidate Master in Codeforces.</p>
+					<a href="#" class="read-more open-modal" data-target="modal-1">Read More <ion-icon
+							name="arrow-forward-outline"></ion-icon></a>
+				</div>
+			</div>
+
+			<div class="blog-card">
+				<div class="blog-img">
+					<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+						alt="Blog 2">
+				</div>
+				<div class="blog-info">
+					<span class="blog-date">Aug 04, 2024</span>
+					<h3>Internship Interview Day at IIT Delhi | Day 1</h3>
+					<p>An honest and detailed account of an overwhelming day of interviews that ended with an offer from
+						Atlassian.</p>
+					<a href="#" class="read-more open-modal" data-target="modal-2">Read More <ion-icon
+							name="arrow-forward-outline"></ion-icon></a>
+				</div>
+			</div>
+
+			<div class="blog-card">
+				<div class="blog-img">
+					<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+						alt="Blog 3">
+				</div>
+				<div class="blog-info">
+					<span class="blog-date">Dec 01, 2025</span>
+					<h3>Placement Interview Day | Day 1</h3>
+					<p>A reflection on patience and persistence during placements, leading to a successful offer from
+						JPMorgan Chase & Co.</p>
+					<a href="#" class="read-more open-modal" data-target="modal-3">Read More <ion-icon
+							name="arrow-forward-outline"></ion-icon></a>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="center">
+			<a href="#" class="btn btn-outline">View All Posts</a>
+		</div> -->
+	</section>
+
+	<section id="contact" class="reveal">
 		<div class="secText">
 			<h2>Ways To Contact Me</h2>
-			<p>Feel free to get in touch with me through any of the following channels. Whether you have a project, collaboration idea, or just want to say hello, I’d love to hear from you!</p>
+			<p>Whether you have a project, collaboration idea, or just want to say hello, I’d love to hear from you!</p>
 		</div>
 		<div class="content">
-			<a href="#">
+			<a href="mailto:jvatsal0709@gmail.com">
 				<ion-icon name="mail-outline"></ion-icon> jvatsal0709@gmail.com
 			</a>
-			<a href="#">
+			<a href="tel:+917742185800">
 				<ion-icon name="call-outline"></ion-icon> +91 7742185800
 			</a>
-		
 			<a href="https://www.linkedin.com/in/vatsaljain79/" target="_blank">
 				<ion-icon name="logo-linkedin"></ion-icon> LinkedIn
 			</a>
-		
 			<a href="https://github.com/vatsaljain79" target="_blank">
 				<ion-icon name="logo-github"></ion-icon> GitHub
-			  </a>
+			</a>
 		</div>
 	</section>
+
+	<!-- Blog Modal 1 -->
+	<div class="modal-overlay" id="modal-1">
+		<div class="modal-content">
+			<button class="close-modal">&times;</button>
+			<h2>Mastering Competitive Programming - Strategy</h2>
+			<div class="modal-body">
+
+				<p>
+					Competitive programming is not about sudden brilliance; it is about consistent improvement over
+					time.
+					The right strategy focuses on practice, patience, and learning from every contest and problem you
+					attempt.
+				</p>
+
+				<h3>Practice and Practice</h3>
+				<p>
+					The most important rule of competitive programming is simple - practice regularly. Problem-solving
+					skills develop only through continuous exposure to different types of questions. The more problems
+					you solve, the stronger your intuition and pattern recognition become.
+				</p>
+
+				<h3>Consistency is the Key</h3>
+				<p>
+					Consistency matters more than solving many problems occasionally. Even small daily practice sessions
+					help maintain momentum and gradually improve speed and accuracy. Long-term consistency leads to
+					significant improvement.
+				</p>
+
+				<h3>Participate in Contests Frequently</h3>
+				<p>
+					Try to give as many contests as possible across different platforms. Competing regularly helps
+					optimize
+					your time management, improves thinking under pressure, and exposes you to diverse problem styles.
+				</p>
+
+				<h3>Do Not Feel Low After Bad Contests</h3>
+				<p>
+					Not every contest will go well, and that is completely normal. Poor performances are part of the
+					learning
+					process. Instead of getting discouraged, analyze mistakes and stay consistent with practice.
+				</p>
+
+				<h3>Learn from Unsolved Problems</h3>
+				<p>
+					If you are unable to solve a question during practice, spend time understanding its tutorial or
+					editorial.
+					If a new concept appears, make sure you understand it properly and remember the approach so that you
+					can
+					solve similar problems independently in the future.
+				</p>
+
+				<ul>
+					<li>Practice regularly and stay consistent.</li>
+					<li>Participate in contests on multiple platforms.</li>
+					<li>Do not get discouraged by bad performances.</li>
+					<li>Learn actively from editorials and new concepts.</li>
+					<li>Focus on long-term improvement rather than short-term results.</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Blog Modal 2 -->
+	<div class="modal-overlay" id="modal-2">
+		<div class="modal-content">
+			<button class="close-modal">&times;</button>
+			<h2>Internship Interview Day at IIT Delhi - Aug 3, 2024 | Day 1</h2>
+
+			<div class="modal-body">
+
+				<p>
+					Before Day 1 of internship interviews, I was shortlisted for almost all company Online Assessments,
+					and after the OAs, I had shortlists from more than 10 companies scheduled for Day 1.
+					It felt exciting - but also extremely overwhelming.
+				</p>
+
+				<h3>The Day Begins - 6:00 AM</h3>
+				<p>
+					Day 1 started early at 6 AM on August 3rd with my first interview at
+					<strong>Graviton</strong> for the ULL role. Unfortunately, I could not perform
+					at my best in Round 1 itself and got eliminated. It was not the start I had hoped for,
+					but the day had only just begun.
+				</p>
+
+				<p>
+					Next came two rounds of interviews with <strong>Millennium</strong> followed by three
+					rounds with <strong>Goldman Sachs</strong>. Later, I also received an interview call from
+					<strong>DE Shaw</strong>. Although my interviews with Goldman Sachs and Millennium went well,
+					I was not selected.
+				</p>
+
+				<p>
+					By 12 PM, Slot 1 was over - multiple interviews completed, but no offer in hand.
+					I felt disappointed and honestly a bit depressed. However, I knew the most important
+					thing at that moment was to stay calm and prepare for Slot 2 starting at 3 PM.
+				</p>
+
+				<h3>Slot 2 - The Long Evening</h3>
+				<p>
+					The second half of the day began with an interview at <strong>Adobe Research</strong>,
+					followed by Round 1 and Round 2 interviews with <strong>Atlassian</strong>.
+					Later, I received a call from <strong>Samsung Korea</strong>, where after three rounds,
+					I was placed on the offer waitlist.
+				</p>
+
+				<p>
+					Then came three rounds with <strong>Barclays</strong>, where again I was placed on the
+					offer waitlist. Around 8:30 PM, after most companies had finalized selections, I started
+					an interview with <strong>QRT</strong>. I cleared Round 1 but was rejected after Round 2.
+				</p>
+
+				<p>
+					After an entire day filled with interviews, I still had no offer.
+					I returned to my hostel feeling completely exhausted and mentally drained.
+				</p>
+
+				<h3>The Night</h3>
+				<p>
+					A friend came to my room and asked whether I had eaten anything.
+					I realized I had not eaten since morning. We went to the canteen together,
+					had dinner, and I finally went to sleep reminding myself that I still had
+					interviews scheduled for the next day - more than five shortlists waiting.
+				</p>
+
+				<p>
+					Despite everything, I believed that whatever happens, happens for a reason.
+				</p>
+
+				<h3>The Morning That Changed Everything</h3>
+				<p>
+					The next morning, I woke up at 5 AM and checked my phone.
+					There was a message from the OCS team:
+				</p>
+
+				<p><strong>“You have been selected by Atlassian. Congratulations!”</strong></p>
+
+				<p>
+					That moment is impossible to describe in words - the contrast between a hopeless
+					night and a clear, hopeful morning. All the stress, uncertainty, and emotions
+					of the previous day suddenly made sense.
+				</p>
+
+				<h3>Final Thought</h3>
+				<p>
+					Life does not always reward you immediately. Sometimes you go through failures,
+					rejections, and long exhausting days before things fall into place.
+					Just believe in yourself, stay patient, and keep moving forward.
+				</p>
+
+				<ul>
+					<li>Rejections are temporary.</li>
+					<li>Consistency and calmness matter under pressure.</li>
+					<li>Every experience prepares you for the right opportunity.</li>
+					<li>Whatever happens eventually works out for the best.</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Blog Modal 3 -->
+	<div class="modal-overlay" id="modal-3">
+		<div class="modal-content">
+			<button class="close-modal">&times;</button>
+			<h2>Placement Interview Day - Dec 1, 2025 | Day 1</h2>
+
+			<div class="modal-body">
+
+				<p>
+					Before Day 1 of placements, I had already completed all three interview rounds with
+					<strong>Databricks</strong>. The interviews went well, but unfortunately I was not selected
+					- possibly because of my CGPA (8.8). Around the same time, I had also completed
+					Round 1 and Round 2 with <strong>Squarepoint</strong>, both of which went extremely well.
+					With strong hopes, I entered Day 1 on December 1st.
+				</p>
+
+				<h3>6:00 AM - The Day Begins</h3>
+				<p>
+					The morning started early with Round 3 at <strong>Squarepoint</strong> for a Software
+					Developer position. Unfortunately, the interview did not go as expected. Without much
+					time to think, I immediately moved to my next interview at <strong>DE Shaw</strong>.
+				</p>
+
+				<p>
+					I had two rounds there, but later I was informed that they were moving forward with
+					other candidates. Soon after, I headed to <strong>Goldman Sachs</strong>, where I faced
+					three back-to-back interviews. After completing all rounds, I was placed on the
+					waitlist.
+				</p>
+
+				<p>
+					By 11:30 AM, multiple interviews were done - yet I still had no offer in hand.
+					The pressure and uncertainty were real, but the day was not over yet.
+				</p>
+
+				<h3>The Turning Point</h3>
+				<p>
+					I then moved to <strong>JPMorgan Chase & Co. (JPMC)</strong>. After another series of
+					three consecutive interview rounds, the moment finally arrived - I received an offer.
+				</p>
+
+				<p>
+					That feeling is impossible to fully describe. The joy, relief, and satisfaction of
+					finally being placed after continuous interviews and uncertainty made every effort
+					worth it. All the preparation, failures, and persistence finally paid off.
+				</p>
+
+				<h3>Final Reflection</h3>
+				<p>
+					Placement journeys test not only your technical skills but also your patience,
+					mental strength, and belief in yourself. Rejections are temporary, but persistence
+					eventually leads you to the right opportunity.
+				</p>
+
+				<ul>
+					<li>Every rejection teaches something valuable.</li>
+					<li>Stay calm even when things don’t go your way.</li>
+					<li>Trust your preparation and keep moving forward.</li>
+					<li>Your moment will come - sometimes when you least expect it.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<script>
+		// Active link switching on scroll and click
 		const list = document.querySelectorAll('.nav li');
-		function active(){
-			list.forEach((i) =>
-			i.classList.remove('active'));
-			this.classList.add('active');
-		}
-		list.forEach((i) =>
-		i.addEventListener('click', active));
+		const sections = document.querySelectorAll('section');
 
+		function activeLink() {
+			list.forEach((item) => item.classList.remove('active'));
+			this.classList.add('active');
+			header.classList.remove('active'); // close menu on click
+		}
+
+		list.forEach((item) => item.addEventListener('click', activeLink));
+
+		// Mobile menu toggle
 		let menuToggle = document.querySelector('.menuToggle');
 		let header = document.querySelector('header');
-		menuToggle.onclick = function(){
-			header.classList.toggle('active')
+		menuToggle.onclick = function () {
+			header.classList.toggle('active');
 		}
 
-		const text = "Vatsal Jain"; // The text to type and delete
-    const typingElement = document.getElementById("typing");
-    let index = 0;
-    let isDeleting = false;
+		// Typing effect
+		const text = "Vatsal Jain";
+		const typingElement = document.getElementById("typing");
+		let index = 0;
+		let isDeleting = false;
 
-    function typeEffect() {
-      const delay = isDeleting ? 100 : 150;
+		function typeEffect() {
+			const delay = isDeleting ? 100 : 150;
 
-      if (!isDeleting && index < text.length) {
-        typingElement.textContent += text[index];
-        index++;
-      } else if (isDeleting && index > 0) {
-        typingElement.textContent = text.substring(0, index - 1);
-        index--;
-      }
+			if (!isDeleting && index < text.length) {
+				typingElement.textContent += text[index];
+				index++;
+			} else if (isDeleting && index > 0) {
+				typingElement.textContent = text.substring(0, index - 1);
+				index--;
+			}
 
-      if (index === text.length) {
-        setTimeout(() => (isDeleting = true), 1000);
-      } else if (index === 0) {
-        isDeleting = false;
-      }
+			if (index === text.length) {
+				setTimeout(() => (isDeleting = true), 1500);
+			} else if (index === 0) {
+				isDeleting = false;
+			}
 
-      setTimeout(typeEffect, delay);
-    }
+			setTimeout(typeEffect, delay);
+		}
 
-    // Start the typing effect
-    typeEffect();
+		// Start typing
+		typeEffect();
 
+		// Update active section on scroll
+		window.addEventListener('scroll', () => {
+			let current = '';
+			sections.forEach(section => {
+				const sectionTop = section.offsetTop;
+				if (scrollY >= sectionTop - 150) {
+					current = section.getAttribute('id');
+				}
+			});
 
+			list.forEach(li => {
+				li.classList.remove('active');
+				if (li.querySelector('a').getAttribute('href') === `#${current}`) {
+					li.classList.add('active');
+				}
+			});
+		});
+
+		// Scroll Reveal Animations
+		const revealElements = document.querySelectorAll('.reveal');
+
+		const revealOptions = {
+			threshold: 0.15,
+			rootMargin: "0px 0px -50px 0px"
+		};
+
+		const revealOnScroll = new IntersectionObserver(function (entries, observer) {
+			entries.forEach(entry => {
+				if (!entry.isIntersecting) return;
+				entry.target.classList.add('active');
+				observer.unobserve(entry.target);
+			});
+		}, revealOptions);
+
+		revealElements.forEach(el => {
+			revealOnScroll.observe(el);
+		});
+
+		// Custom Cursor Logic
+		const cursorDot = document.getElementById('cursor-dot');
+		const cursorOutline = document.getElementById('cursor-outline');
+		const interactiveElements = document.querySelectorAll('a, .btn, .servicesBx, .imgBx, .blog-card, .close-modal');
+
+		window.addEventListener('mousemove', (e) => {
+			const posX = e.clientX;
+			const posY = e.clientY;
+
+			cursorDot.style.left = `${posX}px`;
+			cursorDot.style.top = `${posY}px`;
+
+			// Smooth follow for the outline
+			cursorOutline.animate({
+				left: `${posX}px`,
+				top: `${posY}px`
+			}, { duration: 500, fill: "forwards" });
+		});
+
+		interactiveElements.forEach(el => {
+			el.addEventListener('mouseenter', () => {
+				cursorOutline.classList.add('hovered');
+				cursorDot.classList.add('hovered');
+			});
+			el.addEventListener('mouseleave', () => {
+				cursorOutline.classList.remove('hovered');
+				cursorDot.classList.remove('hovered');
+			});
+		});
+
+		// Modal Logic
+		const modals = document.querySelectorAll('.modal-overlay');
+		const openModalBtns = document.querySelectorAll('.open-modal');
+		const closeBtns = document.querySelectorAll('.close-modal');
+
+		openModalBtns.forEach(btn => {
+			btn.addEventListener('click', (e) => {
+				e.preventDefault(); // Prevent default link behavior
+
+				const targetModalId = btn.getAttribute('data-target');
+				const modal = document.getElementById(targetModalId);
+
+				if (modal) {
+					modal.classList.add('active');
+					document.body.style.overflow = 'hidden'; // Prevent background scrolling
+				}
+			});
+		});
+
+		closeBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				modals.forEach(m => m.classList.remove('active'));
+				document.body.style.overflow = 'auto'; // Restore background scrolling
+			});
+		});
+
+		// Close modal when clicking outside of the modal content
+		window.addEventListener('click', (e) => {
+			if (e.target.classList.contains('modal-overlay')) {
+				e.target.classList.remove('active');
+				document.body.style.overflow = 'auto'; // Restore background scrolling
+			}
+		});
 
 	</script>
-	
 </body>
+
 </html>
